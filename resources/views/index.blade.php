@@ -18,8 +18,8 @@
         <h2 data-aos="fade-up" data-aos-delay="400">Temukan Dunia Pengetahuan di Perpustakaan Daerah Kami</h2>
         <div data-aos="fade-up" data-aos-delay="600">
           <div class="text-center text-lg-start">
-            <a href="/keanggotaan" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-              <span>Daftar Anggota</span>
+            <a href="/buku" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <span>Pinjam Buku</span>
               <i class="bi bi-arrow-right"></i>
             </a>
           </div>

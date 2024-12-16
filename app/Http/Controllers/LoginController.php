@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Peserta;
 
 class LoginController extends Controller
 {
@@ -12,7 +11,7 @@ class LoginController extends Controller
         return view('login');
     }
 
-    public function authenticate(Request $request) {
+    public function login(Request $request) {
         
         $credentials = $request->validate([
             'email' => 'required',
@@ -25,12 +24,7 @@ class LoginController extends Controller
 
             return redirect()->intended('/dashboard');
 
-        } else if (Auth::guard('peserta')->attempt($credentials)){
-            $request->session()->regenerate();
-
-            return redirect()->intended('/')->with('success','Berhasil login!');
         }
-
 
         return back()->with('loginError','Login Failed');
 

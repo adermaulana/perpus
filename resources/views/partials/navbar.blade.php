@@ -8,8 +8,8 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto {{ ($title === 'Landing Page') ? 'active' : '' }}" href="/">Home</a></li>
-        <li><a class="nav-link scrollto {{ ($title === 'Data Hasil') ? 'active' : '' }}" href="/">Info</a></li>
+        <li><a class="nav-link scrollto {{ ($title === 'Perpustakaan Sekolah XX') ? 'active' : '' }}" href="/">Home</a></li>
+        <li><a class="nav-link scrollto {{ ($title === 'Buku') ? 'active' : '' }}" href="/buku">Buku</a></li>
         @auth('peserta')
         <form action="/logout" method="post">
           @csrf
